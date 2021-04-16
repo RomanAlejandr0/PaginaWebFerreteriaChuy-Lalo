@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario de captura</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container py-5">
+    <form>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Producto</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" placeholder="Descripcion completa del producto">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Clave de producto</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" placeholder="Clave para acceso rapido al producto">
+        </div>
+      </div>
+
+      <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Marca</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" placeholder="Marca del producto">
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label>Unidad de venta</label>
+          <select class="form-control">
+            <option selected>Seleccione una opcion</option>
+            <option>Pieza</option>
+            <option>Bulto</option>
+            <option>Metro</option>
+            <option>Volteo</option>
+            <option>Kilogramo</option>
+          </select>
+      </div>
+
+      <div class="form-row">
+
+        <div class="form-group col-md-4">
+          <label>Precio Compra</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="number" class="form-control"> 
+          </div>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label>Precio Menudeo</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="number" class="form-control"> 
+          </div>
+        </div>
+
+        <div class="form-group col-md-4">
+            <label>Precio Mayoreo</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">$</div>
+              </div>
+              <input type="number" class="form-control"> 
+            </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label>Inventario</label>
+          <input type="number" class="form-control">
+        </div>
+        <div class="form-group col-md-4">
+          <label>Balance precios</label>
+          <input type="number" class="form-control">
+        </div>
+        <div class="form-group col-md-4">
+        <label>Clave del SAT</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <input type="button" class="btn btn-primary" @onclick="@Crear" value="Agregar producto" title="Agregar producto al inventario"/>
+    </form>  
+      
+    <form>
+      <div class="container py-5">
+        <div class="form-row">
+
+        </div>
+        
+      </div>
+    </form>
+
+  </div>
+
+</body>
+</html>
